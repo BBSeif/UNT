@@ -1,0 +1,19 @@
+server:
+  port: 8180
+
+
+spring:
+  applicaton:
+    name: user
+  datasource:
+    username: 'bekesh'
+    password: 'password'
+    url: jdbc:postgresql://localhost:5432/postgres
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: 'true'
+      hibernate:
+        ddl-auto: update
+      show-sql: 'true'
