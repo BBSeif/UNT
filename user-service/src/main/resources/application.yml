@@ -1,19 +1,25 @@
-server:
-  port: 8180
-
-
-spring:
-  applicaton:
-    name: user
-  datasource:
-    username: 'bekesh'
-    password: 'password'
-    url: jdbc:postgresql://localhost:5432/postgres
-    jpa:
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
-          format_sql: 'true'
-      hibernate:
-        ddl-auto: update
-      show-sql: 'true'
+#server:
+#  port: 8180
+#
+#
+#spring:
+#  applicaton:
+#    name: user
+#  datasource:
+#    username: 'user'
+#    password: 'password'
+#    url: jdbc:postgresql://0.0.0.0:5432/users
+#    jpa:
+#      properties:
+#        hibernate:
+#          dialect: org.hibernate.dialect.PostgreSQLDialect
+#          format_sql: true
+#      hibernate:
+#        ddl-auto: update
+#      show-sql: true
+#
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        SQL: DEBUG

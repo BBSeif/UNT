@@ -15,16 +15,16 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-//@Table(name = "users")
+@Table(name = "users")
 public class User {
     @Id
-    @SequenceGenerator(
-            name = "user_id_sequence",
-            sequenceName = "user_id_sequence"
-    )
+//    @SequenceGenerator(
+//            name = "user_id_sequence",
+//            sequenceName = "user_id_sequence"
+//    )
     @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "customer_id_sequence"
+            strategy = GenerationType.AUTO
+//            generator = "customer_id_sequence"
     )
     private UUID id;
 
