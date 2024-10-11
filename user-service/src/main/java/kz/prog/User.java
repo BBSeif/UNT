@@ -2,10 +2,8 @@ package kz.prog;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.FieldDefaults;
 
 import java.util.UUID;
 
@@ -14,32 +12,16 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "users")
 public class User {
     @Id
-//    @SequenceGenerator(
-//            name = "user_id_sequence",
-//            sequenceName = "user_id_sequence"
-//    )
-    @GeneratedValue(
-            strategy = GenerationType.AUTO
-//            generator = "customer_id_sequence"
-    )
-    private UUID id;
-
-//    @Column(nullable = false, unique = true)
-    private String username;
-
-//    @Column(nullable = false)
-    private String password;
-
-//    @Enumerated(EnumType.STRING)
-//    @Column(nullable = false)
-    private Role role;
-
-    // Getters and Setters
-    // Constructors
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    UUID id;
+    String username;
+    String password;
+    Role role;
 }
 
 enum Role {
