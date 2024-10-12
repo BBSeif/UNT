@@ -1,6 +1,6 @@
 package kz.prog.service;
 
-import kz.prog.Question;
+import kz.prog.entity.Question;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;

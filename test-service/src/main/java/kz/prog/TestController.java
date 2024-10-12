@@ -1,5 +1,6 @@
 package kz.prog;
 
+import kz.prog.entity.Question;
 import kz.prog.entity.TestResult;
 import kz.prog.entity.TestSubmission;
 import kz.prog.service.TestResultCalculator;

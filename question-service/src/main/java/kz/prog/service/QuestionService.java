@@ -1,6 +1,11 @@
-package kz.prog;
+package kz.prog.service;
 
 
+import kz.prog.entity.Answer;
+import kz.prog.entity.Question;
+import kz.prog.entity.QuestionRegistrationRequest;
+import kz.prog.repository.AnswerRepository;
+import kz.prog.repository.QuestionRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +28,8 @@ public record QuestionService (QuestionRepository questionRepository,
         Question question = Question.builder()
                 .questionText(request.getQuestionText())
                 .build();
-
+        questionRepository.save(question);
+        log.info("<---------------{} Question is saved !---------------->", question);
 
         for (String answer : request.getAnswers()) {
             boolean isCorrect = request.getCorrectAnswers().contains(answer);
@@ -36,8 +42,8 @@ public record QuestionService (QuestionRepository questionRepository,
             answerRepository.save(answerObj);
 
         }
-        log.info("<---------------{} Question is saved !---------------->", question);
-        questionRepository.save(question);
+
+
 
     }
 

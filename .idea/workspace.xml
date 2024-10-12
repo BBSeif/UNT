@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f05c5d2d-7c1f-470a-af10-88d1f94b2a14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/AnswerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/AnswerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/repository/AnswerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/QuestionRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/repository/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/QuestionServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/QuestionServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/TestService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,22 +70,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/bekesh/Documents/Gradle/UNT/user-service/src/main/java",
-    "onboarding.tips.debug.path": "/Users/bekesh/Documents/Gradle/UNT/question-service/src/main/java/kz/prog/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bekesh/Documents/Gradle/UNT/user-service/src/main/java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/bekesh/Documents/Gradle/UNT/question-service/src/main/java/kz/prog/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="kz.prog" />
@@ -109,7 +114,7 @@
       <module name="UNT.question-service.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kz.prog.*" />
+          <option name="PATTERN" value="kz.prog.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

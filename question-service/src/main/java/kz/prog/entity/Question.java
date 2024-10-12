@@ -1,4 +1,4 @@
-package kz.prog;
+package kz.prog.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -13,6 +13,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "questions")
@@ -24,4 +25,7 @@ public class Question {
 
     @Column(name = "question_text", nullable = false)
     String questionText;
+
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL)
+    List<Answer> answers;
 }

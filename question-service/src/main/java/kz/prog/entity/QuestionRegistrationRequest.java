@@ -1,4 +1,4 @@
-package kz.prog;
+package kz.prog.entity;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

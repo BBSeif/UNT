@@ -1,7 +1,7 @@
 package kz.prog.service;
 
 import kz.prog.entity.CorrectAnswer;
-import kz.prog.Question;
+import kz.prog.entity.Question;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,12 +16,12 @@ public record QuestionServiceClient(RestTemplate restTemplate) {
         return restTemplate.getForObject("http://localhost:8082/api/questions/" + id, Question.class);
     }
 
-    public List<CorrectAnswer> getCorrectAnswers(Long testId) {
-        String url = "http://localhost:8082/api/tests/" + testId + "/correct-answers";
-        // Fetch the correct answers from the Question Service
-        CorrectAnswer[] correctAnswers = restTemplate.getForObject(url, CorrectAnswer[].class);
-        return Arrays.asList(correctAnswers);  // Convert the array to a List
-    }
+//    public List<CorrectAnswer> getCorrectAnswers(Long testId) {
+//        String url = "http://localhost:8082/api/tests/" + testId + "/correct-answers";
+//        // Fetch the correct answers from the Question Service
+//        CorrectAnswer[] correctAnswers = restTemplate.getForObject(url, CorrectAnswer[].class);
+//        return Arrays.asList(correctAnswers);  // Convert the array to a List
+//    }
 
     public List<Question> getAllQuestions() {
         String url = "http://localhost:8082/api/questions/all";
