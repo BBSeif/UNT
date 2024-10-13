@@ -47,9 +47,11 @@ public record QuestionService (QuestionRepository questionRepository,
 
     }
 
-    public List<Question> getAll(){
+    public List<Question> getAllQuestions(){
         return questionRepository.findAll();
     }
+
+    public Answer getAnswerById(Long id) {return answerRepository.findById(id).orElse(null);}
 }
 
 

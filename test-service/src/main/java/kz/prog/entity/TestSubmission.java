@@ -4,6 +4,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.List;
+import java.util.Map;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,5 +14,5 @@ import java.util.List;
 public class TestSubmission {
     Long testId;
     Long userId;
-    List<Long> selectedAnswers;
+    Map<Long, Long> selectedAnswers;
 }

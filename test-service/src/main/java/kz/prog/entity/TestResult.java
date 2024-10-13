@@ -13,5 +13,4 @@ public class TestResult {
     Long testId;
     Long userId;
     int score;
-    List<Long> correctAnswerIds;
 }

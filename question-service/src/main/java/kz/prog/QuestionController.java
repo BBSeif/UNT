@@ -1,5 +1,6 @@
 package kz.prog;
 
+import kz.prog.entity.Answer;
 import kz.prog.entity.Question;
 import kz.prog.entity.QuestionRegistrationRequest;
 import kz.prog.service.QuestionService;
@@ -11,7 +12,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("api/questions")
-public record QuestionController( QuestionService questionService) {
+public record QuestionController(QuestionService questionService) {
 
     @PostMapping
     public void registerQuestion (@RequestBody QuestionRegistrationRequest questionRegistrationRequest){
@@ -21,6 +22,11 @@ public record QuestionController( QuestionService questionService) {
 
     @GetMapping("/all")
     public List<Question> getAllQuestions (){
-        return questionService.getAll();
+        return questionService.getAllQuestions();
+    }
+
+    @GetMapping("/answer")
+    public Answer getAnswerById(@RequestParam Long id){
+        return questionService.getAnswerById(id);
     }
 }
