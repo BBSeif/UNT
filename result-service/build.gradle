@@ -5,6 +5,9 @@ dependencies {
     implementation 'org.postgresql:postgresql'
     implementation project(":test-service")
 
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

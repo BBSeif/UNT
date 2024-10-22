@@ -3,7 +3,6 @@ package kz.prog.entity;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.util.List;
 
 @Builder
 @Getter
