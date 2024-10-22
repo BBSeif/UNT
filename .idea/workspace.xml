@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f05c5d2d-7c1f-470a-af10-88d1f94b2a14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/config/TopicConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/AnswerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/repository/AnswerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/QuestionRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/repository/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/QuestionServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/QuestionServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/TestResultConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/service/TestResultConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/result-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/TestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/entity/TestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/entity/TestResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/TestResultPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/service/TestResultPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +51,8 @@
       <list>
         <option value="Record" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,7 +106,7 @@
       <recent name="kz.prog" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuestionApplication">
+  <component name="RunManager" selected="Application.TestApplication">
     <configuration name="QuestionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kz.prog.QuestionApplication" />
       <module name="UNT.question-service.main" />

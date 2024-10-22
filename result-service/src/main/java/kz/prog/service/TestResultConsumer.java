@@ -1,4 +1,4 @@
-package kz.prog;
+package kz.prog.service;
 
 import kz.prog.entity.TestResult;
 import org.springframework.kafka.annotation.KafkaListener;
