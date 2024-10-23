@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f05c5d2d-7c1f-470a-af10-88d1f94b2a14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/KafkaListeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/entity/TestResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/result-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/service/TestResultConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/result-service/src/main/java/kz/prog/service/TestResultConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/result-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/entity/TestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-service/src/main/java/kz/prog/entity/TestResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
