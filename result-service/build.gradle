@@ -3,9 +3,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.kafka:spring-kafka'
     implementation 'org.postgresql:postgresql'
-//    implementation project(":test-service")
+    implementation project(":test-service")
 
     implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation project(path: ':test-service')
 
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
