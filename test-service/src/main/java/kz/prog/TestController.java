@@ -33,7 +33,7 @@ public record TestController(TestService testService,
         TestResult testResult = testResultCalculator.calculateTestResult(submission);
 
         // Publish the result to Kafka
-        testResultPublisher.publishTestResult(testResult);
+        testResultPublisher.publishTestResult(testResult.toString());
         log.info("<================= {} send to result-service ==================>",testResult);
 
         // Optionally, return the result back to the client

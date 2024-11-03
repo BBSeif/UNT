@@ -10,16 +10,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class TestResultPublisher {
 
-    private final KafkaTemplate<String, TestResult> kafkaTemplate;
+    private final KafkaTemplate<Object, String> kafkaTemplate;
 
     @Value("${kafka.topic.test-results}")
     private String testResultsTopic;
 
-    public TestResultPublisher(KafkaTemplate<String, TestResult> kafkaTemplate) {
+    public TestResultPublisher(KafkaTemplate<Object, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    public void publishTestResult(TestResult testResult) {
+    public void publishTestResult(String testResult) {
         kafkaTemplate.send(testResultsTopic, testResult);
 
         log.info("Message send to topic : {} ",testResultsTopic);
