@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register Question</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div  th:if="${message}" class="alert alert-success">
+    <p th:text="${message}"></p>
+</div>
+
+
+<a th:href="@{/}">
+    << Back
+</a>
+
+<div class="container">
+<h2>Register a New Question</h2>
+<form th:action="@{/questions/register}" th:object="${questionRegistrationRequest}" method="post">
+    <label>Question Text:</label><br>
+    <input type="text" th:field="*{questionText}" required  class="form-control mb-3 w-80"/><br><br>
+
+    <label>Answers:</label><br>
+    <input type="text" th:field="*{answers[0]}"  required class=" mb-2 w-50" placeholder="A"/><br>
+    <input type="text" th:field="*{answers[1]}"  required class=" mb-2 w-50" placeholder="B"/><br>
+    <input type="text" th:field="*{answers[2]}"  required class=" mb-2 w-50" placeholder="C"/><br>
+    <input type="text" th:field="*{answers[3]}"  required class=" mb-2 w-50" placeholder="D"/><br>
+    <input type="text" th:field="*{answers[3]}"   class=" mb-2 w-50" placeholder="E"/><br>
+    <input type="text" th:field="*{answers[3]}"   class=" mb-2 w-50" placeholder="F"/><br>
+    <input type="text" th:field="*{answers[3]}"   class=" mb-2 w-50" placeholder="G"/><br>
+    <input type="text" th:field="*{answers[3]}"   class=" mb-2 w-50" placeholder="H"/><br><br>
+
+    <label>Correct Answers :</label><br>
+    <input type="text" th:field="*{correctAnswers}" placeholder="Correct Answer" required class=" mb-2 w-50" /><br>
+    <input type="text" th:field="*{correctAnswers}" placeholder="Correct Answer"  class=" mb-2 w-50" /><br>
+    <input type="text" th:field="*{correctAnswers}" placeholder="Correct Answer"  class=" mb-2 w-50" /><br><br>
+
+    <button type="submit" class="btn btn-info col-2">Register Question</button>
+</form>
+</div>
+</body>
+</html>

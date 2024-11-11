@@ -4,8 +4,8 @@ dependencies {
     implementation 'org.postgresql:postgresql'
     implementation 'com.vladmihalcea:hibernate-types-52:2.2.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind'
-
-
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     // Kafka dependency
     implementation 'org.springframework.kafka:spring-kafka'

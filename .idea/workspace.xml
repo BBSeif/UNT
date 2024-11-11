@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f05c5d2d-7c1f-470a-af10-88d1f94b2a14" name="Changes" comment="" />
+    <list default="true" id="f05c5d2d-7c1f-470a-af10-88d1f94b2a14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionMVC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/templates/QuestionList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/templates/answer-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/templates/question-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/templates/question-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/QuestionRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/kz/prog/entity/QuestionRegistrationRequest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +54,7 @@
         <option value="Record" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -58,32 +71,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bekesh/Documents/Gradle/UNT/user-service/src/main/java&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/bekesh/Documents/Gradle/UNT/question-service/src/main/java/kz/prog/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/bekesh/Documents/Gradle/UNT/question-service/src/main/resources/templates",
+    "onboarding.tips.debug.path": "/Users/bekesh/Documents/Gradle/UNT/question-service/src/main/java/kz/prog/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="kz.prog" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/question-service/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/user-service/src/main/java" />
       <recent name="$PROJECT_DIR$/test-service" />
       <recent name="$PROJECT_DIR$/question-service" />
       <recent name="$PROJECT_DIR$/result-service" />
-      <recent name="$PROJECT_DIR$/user-service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/user-service/src/main/resources" />
@@ -96,7 +110,7 @@
       <recent name="kz.prog" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ResultApplication">
+  <component name="RunManager" selected="Application.QuestionApplication">
     <configuration name="QuestionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kz.prog.QuestionApplication" />
       <module name="UNT.question-service.main" />

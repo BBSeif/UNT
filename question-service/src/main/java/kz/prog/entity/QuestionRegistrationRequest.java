@@ -9,6 +9,7 @@ import java.util.List;
 @Builder
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class QuestionRegistrationRequest {
     String questionText;

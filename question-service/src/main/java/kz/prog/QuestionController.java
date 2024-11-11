@@ -30,3 +30,4 @@ public record QuestionController(QuestionService questionService) {
         return questionService.getAnswerById(id);
     }
 }
+

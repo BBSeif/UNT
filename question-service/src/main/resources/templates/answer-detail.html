@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Answer Details</title>
+</head>
+<body>
+<h2>Answer Details</h2>
+<p><strong>Question ID:</strong> <span th:text="${answer.questionId}"></span></p>
+<p><strong>Answer Text:</strong> <span th:text="${answer.answerText}"></span></p>
+<p><strong>Is Correct:</strong> <span th:text="${answer.isCorrect}"></span></p>
+<br>
+<a href="/questions/all">Back to Question List</a>
+</body>
+</html>

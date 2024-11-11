@@ -29,4 +29,8 @@ public class Answer {
 
     @Column(name = "is_correct", nullable = false)
     Boolean isCorrect;
+
+    public Long getQuestionId() {
+        return question != null ? question.getId() : null;
+    }
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>All Questions</title>
+</head>
+<body>
+<h2>All Questions</h2>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Question</th>
+    <th>Actions</th>
+  </tr>
+  <tr th:each="question : ${questions}">
+    <td th:text="${question.id}"></td>
+    <td th:text="${question.questionText}"></td>
+    <td>
+      <a th:href="@{/questions/answer(id=${question.id})}">View Answers</a>
+    </td>
+  </tr>
+</table>
+<br>
+<a href="/questions/register">Register a New Question</a>
+</body>
+</html>
+
+
