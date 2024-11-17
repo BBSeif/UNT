@@ -1,15 +1,22 @@
 package kz.prog;
 
+import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
 import org.springframework.stereotype.Service;
 
 @Service
-public record UserService (UserRepository userRepository) {
+public class UserService {
+
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     public void registerUser(UserRegistrationRequest request) {
             User user = User.builder()
-                    .username(request.username())
-                    .password(request.password())
-                    .role(request.role())
+                    .username(request.getUsername())
+                    .password(request.getPassword())
+                    .role(request.getRole())
                     .build();
 
 //            todo: check if username valid
@@ -20,5 +27,14 @@ public record UserService (UserRepository userRepository) {
     }
 
 
-
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//        User user = userRepository.findByUsername(username)
+//                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+//
+//        return new org.springframework.security.core.userdetails.User(
+//                user.getUsername(),
+//                user.getPassword(),
+//                Collections.singletonList(new SimpleGrantedAuthority(user.getRole()))
+//        );
+//    }
 }

@@ -1,8 +1,14 @@
 package kz.prog;
 
-public record UserRegistrationRequest(
-        String username,
-        String password,
-        Role role
-) {
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class UserRegistrationRequest{
+    String username;
+    String password;
+    Role role;
 }

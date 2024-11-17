@@ -1,7 +1,4 @@
 rootProject.name = 'UNT'
 
 include 'user-service', 'question-service', 'test-service', 'result-service'
-include 'test-service'
-include 'result-service'
-include 'question-service'
 

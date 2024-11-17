@@ -3,6 +3,10 @@ dependencies {
 //    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     runtimeOnly 'org.postgresql:postgresql'
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
     // For Kafka
     implementation 'org.springframework.kafka:spring-kafka'
 
