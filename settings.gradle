@@ -1,4 +1,5 @@
 rootProject.name = 'UNT'
 
 include 'user-service', 'question-service', 'test-service', 'result-service'
+include 'eureka-server'
 
