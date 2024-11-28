@@ -8,6 +8,7 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind'
 //    implementation project(path: ':test-service')
 
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
